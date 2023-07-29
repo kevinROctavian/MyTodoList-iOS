@@ -11,14 +11,23 @@ import SwiftUI
 struct TodoDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
     
-    @State private var email = ""
+    var id = ""
+    
+    @State private var title = ""
+    @State private var desc = ""
+    @State private var date = Date()
     
     var body: some View {
         VStack(alignment: .leading){
             Text("Title:")
-            TextField("Type your title here", text: $email)
+            TextField("Type your title here", text: $title)
+            
+            Text("Desc:").padding(.top, 20)
+            TextField("Type your desc here", text: $desc)
+            
+            DatePicker("Pick a due date", selection: $date, displayedComponents: [.date]).padding(.top, 20)
+            
             HStack{
                 Spacer()
                 Button(action: {
@@ -32,7 +41,7 @@ struct TodoDetailView: View {
                         .background(Color.green)
                         .cornerRadius(15.0)
                 }
-            }.padding(.top, 10)
+            }.padding(.top, 20)
             Spacer()
         }.padding()
     }
