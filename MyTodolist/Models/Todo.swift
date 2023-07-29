@@ -17,5 +17,6 @@ final class Todo: NSManagedObject {
     @NSManaged var title: String
     @NSManaged var desc: String
     @NSManaged var dueDate: Date
-    
 }
+
+extension Todo: Identifiable{}
