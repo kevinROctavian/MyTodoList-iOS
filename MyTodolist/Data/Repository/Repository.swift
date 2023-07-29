@@ -1,5 +1,5 @@
 //
-//  StorageService.swift
+//  Repository.swift
 //  MyTodolist
 //
 //  Created by Kevin on 29/07/23.
@@ -7,12 +7,13 @@
 
 import Foundation
 
-protocol StorageServiceProtocol {
+
+protocol TodoRepositoryProtocol{
     func upsertTodo(todo: Todo)
     func getTodo() -> [Todo]
 }
 
-final class StorageService {
+final class TodoRepository {
     private let dataManager: DataManager
     
     init(dataManager: DataManager = DataManager()) {
@@ -20,9 +21,7 @@ final class StorageService {
     }
 }
 
-extension StorageService: StorageServiceProtocol {
-    
-    
+extension TodoRepository: TodoRepositoryProtocol{
     func upsertTodo(todo: Todo) {
         dataManager.upsertTodo(todo: todo)
     }

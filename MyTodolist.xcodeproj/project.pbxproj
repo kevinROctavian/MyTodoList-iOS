@@ -19,7 +19,7 @@
 		0A2ED7762A74A901000A31C9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7752A74A901000A31C9 /* CoreDataStack.swift */; };
 		0A2ED7782A74A92A000A31C9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7772A74A92A000A31C9 /* DataManager.swift */; };
 		0A2ED77B2A74A95E000A31C9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED77A2A74A95E000A31C9 /* Todo.swift */; };
-		0A2ED77E2A74AC01000A31C9 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED77D2A74AC01000A31C9 /* StorageService.swift */; };
+		0A2ED7822A74AFC2000A31C9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7812A74AFC2000A31C9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		0A2ED7752A74A901000A31C9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0A2ED7772A74A92A000A31C9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0A2ED77A2A74A95E000A31C9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		0A2ED77D2A74AC01000A31C9 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		0A2ED7812A74AFC2000A31C9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +166,25 @@
 		0A2ED77C2A74ABF3000A31C9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0A2ED77D2A74AC01000A31C9 /* StorageService.swift */,
+				0A2ED7802A74AFB0000A31C9 /* Repository */,
+				0A2ED77F2A74AFA2000A31C9 /* Storage Service */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0A2ED77F2A74AFA2000A31C9 /* Storage Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Storage Service";
+			sourceTree = "<group>";
+		};
+		0A2ED7802A74AFB0000A31C9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0A2ED7812A74AFC2000A31C9 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +322,9 @@
 				0A2ED7782A74A92A000A31C9 /* DataManager.swift in Sources */,
 				0A2ED7472A74A279000A31C9 /* ContentView.swift in Sources */,
 				0A2ED7452A74A279000A31C9 /* MyTodolistApp.swift in Sources */,
-				0A2ED77E2A74AC01000A31C9 /* StorageService.swift in Sources */,
 				0A2ED7742A74A8ED000A31C9 /* ErrorModel.swift in Sources */,
 				0A2ED7722A74A88D000A31C9 /* MyTodoList.xcdatamodeld in Sources */,
+				0A2ED7822A74AFC2000A31C9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
