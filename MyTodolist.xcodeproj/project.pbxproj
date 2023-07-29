@@ -19,6 +19,7 @@
 		0A2ED7762A74A901000A31C9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7752A74A901000A31C9 /* CoreDataStack.swift */; };
 		0A2ED7782A74A92A000A31C9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7772A74A92A000A31C9 /* DataManager.swift */; };
 		0A2ED77B2A74A95E000A31C9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED77A2A74A95E000A31C9 /* Todo.swift */; };
+		0A2ED77E2A74AC01000A31C9 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED77D2A74AC01000A31C9 /* StorageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0A2ED7752A74A901000A31C9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0A2ED7772A74A92A000A31C9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		0A2ED77A2A74A95E000A31C9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		0A2ED77D2A74AC01000A31C9 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		0A2ED7432A74A279000A31C9 /* MyTodolist */ = {
 			isa = PBXGroup;
 			children = (
+				0A2ED77C2A74ABF3000A31C9 /* Data */,
 				0A2ED7792A74A933000A31C9 /* Models */,
 				0A2ED76F2A74A863000A31C9 /* Core Data */,
 				0A2ED7442A74A279000A31C9 /* MyTodolistApp.swift */,
@@ -158,6 +161,14 @@
 				0A2ED77A2A74A95E000A31C9 /* Todo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0A2ED77C2A74ABF3000A31C9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0A2ED77D2A74AC01000A31C9 /* StorageService.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				0A2ED7782A74A92A000A31C9 /* DataManager.swift in Sources */,
 				0A2ED7472A74A279000A31C9 /* ContentView.swift in Sources */,
 				0A2ED7452A74A279000A31C9 /* MyTodolistApp.swift in Sources */,
+				0A2ED77E2A74AC01000A31C9 /* StorageService.swift in Sources */,
 				0A2ED7742A74A8ED000A31C9 /* ErrorModel.swift in Sources */,
 				0A2ED7722A74A88D000A31C9 /* MyTodoList.xcdatamodeld in Sources */,
 			);
