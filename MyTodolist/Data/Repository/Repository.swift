@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol TodoRepositoryProtocol{
-    func upsertTodo(todo: Todo)
+    func addTodo(title: String, desc: String, dueDate: Date)
     func getTodo() -> [Todo]
 }
 
@@ -22,8 +22,8 @@ final class TodoRepository {
 }
 
 extension TodoRepository: TodoRepositoryProtocol{
-    func upsertTodo(todo: Todo) {
-        dataManager.upsertTodo(todo: todo)
+    func addTodo(title: String, desc: String, dueDate: Date) {
+        dataManager.addTodo(title: title, desc: desc, dueDate: dueDate)
     }
     
     func getTodo() -> [Todo] {

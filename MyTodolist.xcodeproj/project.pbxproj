@@ -23,6 +23,7 @@
 		0A2ED7862A74B0D3000A31C9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7852A74B0D3000A31C9 /* HomeView.swift */; };
 		0A2ED7882A74B15F000A31C9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED7872A74B15F000A31C9 /* HomeViewModel.swift */; };
 		0A2ED78C2A74B311000A31C9 /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED78B2A74B311000A31C9 /* TodoDetailView.swift */; };
+		0A2ED78E2A74B822000A31C9 /* TodoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ED78D2A74B822000A31C9 /* TodoDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0A2ED7852A74B0D3000A31C9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0A2ED7872A74B15F000A31C9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0A2ED78B2A74B311000A31C9 /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
+		0A2ED78D2A74B822000A31C9 /* TodoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2ED78B2A74B311000A31C9 /* TodoDetailView.swift */,
+				0A2ED78D2A74B822000A31C9 /* TodoDetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A2ED7862A74B0D3000A31C9 /* HomeView.swift in Sources */,
+				0A2ED78E2A74B822000A31C9 /* TodoDetailViewModel.swift in Sources */,
 				0A2ED77B2A74A95E000A31C9 /* Todo.swift in Sources */,
 				0A2ED7762A74A901000A31C9 /* CoreDataStack.swift in Sources */,
 				0A2ED7882A74B15F000A31C9 /* HomeViewModel.swift in Sources */,

@@ -9,7 +9,8 @@ import Foundation
 import CoreData
 
 protocol DataManagerProtocol {
-    func upsertTodo(todo: Todo)
+    func addTodo(title: String, desc: String, dueDate: Date)
+    func update(todo: Todo)
     func getTodo() throws -> [Todo]
     func deleteTodo(todo: Todo)
 }
@@ -33,7 +34,19 @@ final class DataManager {
 }
 
 extension DataManager: DataManagerProtocol{
-    func upsertTodo(todo: Todo) {
+    
+    func addTodo(title: String, desc: String, dueDate: Date){
+        managedObjectContext.perform {
+            let object = Todo(entity: self.entity, insertInto: self.managedObjectContext)
+            object.desc = desc
+            object.dueDate = dueDate
+            object.title = title
+            object.id = String(1000 * Date().timeIntervalSince1970)
+            self.saveContext(completion: {})
+        }
+    }
+    
+    func update(todo: Todo) {
         if let object = isTodoExist(todo: todo){
             self.saveContext(completion: {})
             return
